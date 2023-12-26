@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/animations.css">  
+		<link rel="stylesheet" href="css/all.css">  
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Home
+		</title>
+		
+        
+	</head>
+	
+	<style>
+		.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+ 
+}
+
+.grid-box {
+  margin: 10px;
+
+  padding: 10px;
+}
+	</style>
+	
+	<body style="background-image: url(img/bgimg.jpg); background-size:cover; height:100%;">
+		<div class="container-fluid home_header">
+			 <h1><img src="img/tix.png" style="height:50px; width: 50px; margin-right:20px; margin-bottom:15px; margin-left:-25px">Tix sys</h1>
+			 <p style="font-size: 15px">Solve Evolve Revolve</p>
+		</div>
+		<div class="grid-container">
+		<div class = "grid-box nav_bar" style="overflow:auto">
+			<a href="index.php"><img src="img/home.png" style="height:24px; float:left; margin-right:30px;">Home</a>
+			<a href="log_in.php"><img src="img/login.png" style="height:23px; width: 20px;float:left; margin-right:34px;">Log in</a>
+			<a href="sign_up.php"><img src="img/signup.png" style="height:25px; width:30px; float:left; margin-right:23px;">Sign up</a>
+			<a href="contact.php"><img src="img/contact.png" style="height:25px; width:30px; float:left; margin-right:20px;">Contact</a>
+			<a href="About us.php"><img src="img/about.png" style="height:30px; width:30px; float:left; margin-right:20px;">About us</a>
+			
+		</div>
+		<div class="grid-box contents" style= "margin-left:30%; margin-top:5%; margin-right:50%; overflow:auto; text align:center; ">	
+			<div class="container-fluid notes"style= "width:100%; height:100%">
+				<p>&nbsp;Welcome to Tix sys, here we help you resolve problems</p>
+			</div>
+			<div class="container-fluid slideshow" style= " max-width:100%; height:260px">
+				<div class="container-fluid image_hold" >
+					<picture>
+						<img class="mySlides" src="img/csupp.jpg" style="object-fit:cover">
+						<img class="mySlides" src="img/pcc.jpg" style="object-fit:cover">
+						<img class="mySlides" src="img/chart.jpg" style="object-fit:cover" >
+					</picture>
+				</div>
+			</div>  <br>
+
+		</div>
+		</div>
+		
+			<a href="clients/index.php">Bypass</a>
+		
+		
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+  
+  
+}
+</script>
+
+		<footer >
+			<p style="margin-top:10px; margin:auto; margin-right:10px">Capstone 2 Actual System</p>
+		</footer>
+	</body>
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</html>
